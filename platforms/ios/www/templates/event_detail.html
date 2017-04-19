@@ -1,0 +1,17 @@
+<ion-view view-title="Event @ {{eventdetail.title}}">
+  <ion-content>
+    <div class="row">
+      <div class="col">
+        <img src="http://localhost:8000{{eventdetail.image}}" class="full-width-img" />
+      </div>
+    </div>
+    <div class="row">
+      <h2 class="title" align="center" style="width:100%;">{{eventdetail.title}}<br /><span class="small-text">{{eventdetail.venue}}</span></h2>
+    </div>
+    <div class="row">
+      <p class="description-card">
+        {{eventdetail.description}}
+      </p>
+    </div>
+  </ion-content>
+</ion-view>

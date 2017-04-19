@@ -1,0 +1,22 @@
+<ion-view view-title="Clubs">
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="str.query" ng-change="search()">
+      </label>
+      <center style="margin-top: 1rem;" ng-show="insearch">
+        Searching..
+      </center>
+    </div>
+    <div class="list">
+
+      <a class="item item-thumbnail-left" href="#/app/club_detail/{{club.id}}" ng-repeat="club in clubs">
+        <img src="http://localhost:8000{{club.thumbnail}}">
+        <h2>{{club.title}}</h2>
+        <p>{{club.venue}}</p>
+      </a>
+
+    </div>
+  </ion-content>
+</ion-view>

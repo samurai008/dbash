@@ -1,0 +1,46 @@
+<ion-view view-title="{{$userData.username}}'s Profile">
+  <ion-content>
+    </div>
+    <div class="row profile-row">
+      <div class="col" style="text-align:center;">
+       <div class="profile-picture">
+           <a ><i class="icon ion-edit"></i><img src="http://localhost:8080{{profile_image}}" /></a>
+       </div>
+      </div>
+    </div>
+    <div class="row profile-row">
+      <div class="col">
+        <button class="button button-assertive full-width-btn">Follow</button>
+      </div>
+      <div class="col">
+        <button class="button button-outline button-assertive full-width-btn" ng-click="editprofilebtn()">Edit</button>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <td>
+          Name
+        </td>
+        <td>
+          {{$userData.username}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Phone
+        </td>
+        <td>
+          {{phone}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Address
+        </td>
+        <td>
+          {{address}}
+        </td>
+      </tr>
+    </table>
+  </ion-content>
+</ion-view>

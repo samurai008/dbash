@@ -1,0 +1,69 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-assertive">
+      <!-- <ion-nav-back-button>
+      </ion-nav-back-button> -->
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+    <!-- Tabs -->
+    <ion-tabs class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+      <ion-tab title="Home" icon="ion-home" href="#/app/playlists" on-deselect="onTabDeselected()">
+
+      </ion-tab>
+
+      <ion-tab title="Clubs" icon-on="ion-ios-pint" icon-off="ion-ios-pint" href="#/app/club_list">
+
+      </ion-tab>
+
+      <ion-tab title="Events" icon-on="ion-ios-people" icon-off="ion-ios-people" href="#/app/event_list">
+
+      </ion-tab>
+
+      <ion-tab title="Cart" icon-on="ion-ios-cart" icon-off="ion-ios-cart" href="#/app/cart">
+
+      </ion-tab>
+    </ion-tabs>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-assertive">
+      <h1 class="title">D-Bash</h1>
+    </ion-header-bar>
+    <ion-content class="side-menu-margin">
+      <ion-list>
+        <ion-item menu-close href="#/app/playlists">
+          Home
+        </ion-item>
+        <ion-item menu-close href="#/app/profile" ng-show="$userData.key">
+          Profile
+        </ion-item>
+        <ion-item menu-close ng-show="$userData.key" href="#/app/orders">
+          My Orders
+        </ion-item>
+        <ion-item menu-close ng-click="login()" ng-hide="$userData.key">
+          Login
+        </ion-item>
+        <ion-item menu-close ng-click="register()" ng-hide="$userData.key">
+          Register
+        </ion-item>
+        <ion-item menu-close ng-click="logout()" ng-show="$userData.key">
+          Logout
+        </ion-item>
+        <ion-item menu-close href="#/app/event_list">
+          Events
+        </ion-item>
+        <ion-item menu-close href="#/app/club_list">
+          Clubs
+        </ion-item>
+        <ion-item menu-close href="#/app/find_clubs">
+          Find clubs near me!
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

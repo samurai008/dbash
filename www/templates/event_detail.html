@@ -1,0 +1,21 @@
+<ion-view view-title="Event @ {{eventdetail.name}}">
+  <ion-content drag-content="false" overflow-scroll="true">
+    <ion-slides  options="options" slider="data.slider" id="carousel">
+      <ion-slide-page ng-repeat="photo in eventdetail.images">
+        <div>
+          <img ng-src="http://localhost:8080{{photo}}" />
+        </div>
+      </ion-slide-page>
+    </ion-slides>
+    <div class="row">
+      <h2 class="header" style="width:100%;"><span style="font-size:22px;">{{eventdetail.name}}</span><br /><span class="small-text">{{eventdetail.location}}</span></h2>
+    </div>
+    <div class="row">
+      <p class="description-card">
+        {{eventdetail.description}}
+      </p>
+    </div>
+
+    <button class="button button-assertive full-width-btn" ng-click="addToCart()">Add ticket to Cart for Rs.{{eventdetail.price}}</button>
+  </ion-content>
+</ion-view>

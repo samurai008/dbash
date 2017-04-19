@@ -1,0 +1,32 @@
+<ion-view view-title="Cart">
+  <ion-content>
+    <form ng-submit="checkout_ftn()">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <td>product</td>
+            <td>price</td>
+          </tr>
+        </thead>
+
+        <tfoot>
+          <tr>
+            <td>total</td>
+            <td colspan="2">Rs. 99.99</td>
+          </tr>
+          <tr>
+            <td colspan="3"><button class="button button-assertive full-width-btn" type="submit">checkout</button></td>
+          </tr>
+        </tfoot>
+
+        <tbody>
+          <tr>
+            <td>New Years @ Anti Social<br /><small>(event)</small></td>
+            <td>1500</td>
+            <td><a href="#"><i class="ion-close-circled"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </ion-content>
+</ion-view>

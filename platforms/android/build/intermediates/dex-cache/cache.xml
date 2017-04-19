@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Nilabjo/IonicProjects/dbash2/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="873daaba9b25e7f07376989b900fc46e99a9271c">
+        <dex dex="/Users/Nilabjo/IonicProjects/dbash2/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_0b357ee744cb68b147829c177f6b69ca626a8358.jar" />
+    </item>
+
+</items>

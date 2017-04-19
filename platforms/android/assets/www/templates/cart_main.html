@@ -1,0 +1,39 @@
+<ion-view view-title="Cart">
+  <ion-content>
+    <form ng-submit="checkout_ftn()">
+      <h4 ng-hide="cartdetails">No Products in the cart</h4>
+      <table class="cart-table" ng-show="cartdetails">
+        <thead>
+          <tr>
+            <td>product</td>
+            <td>
+              quantity
+            </td>
+            <td>price</td>
+          </tr>
+        </thead>
+
+        <tfoot>
+          <tr>
+            <td>total</td>
+            <td colspan="3">{{cartTotal}}</td>
+          </tr>
+          <tr>
+            <td colspan="4"><button class="button button-assertive full-width-btn" type="submit">checkout</button></td>
+          </tr>
+        </tfoot>
+
+        <tbody>
+          <tr ng-repeat="item in cartdetails">
+            <td><a href="#/app/event_detail/{{item.id}}">{{item.name}}</a><br /><small>({{item.p_type}})</small></td>
+            <td>
+              {{item.quantity}}
+            </td>
+            <td>{{item.price}}</td>
+            <td><button type="button" ng-click="removeFromCart({{cartdetails.indexOf(item)}})"><i class="ion-close-circled"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </ion-content>
+</ion-view>

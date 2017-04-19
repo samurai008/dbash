@@ -1,0 +1,28 @@
+<ion-view view-title="Club Detail">
+  <ion-content drag-content="false" overflow-scroll="true">
+    <ion-slides  options="options" slider="data.slider" id="carousel">
+      <ion-slide-page ng-repeat="photo in clubdetail.images">
+        <div>
+          <img ng-src="http://localhost:8080{{photo}}" />
+        </div>
+      </ion-slide-page>
+    </ion-slides>
+    <div class="row">
+    </div>
+    <div class="row">
+      <h2 class="header" style="width:100%;"><span style="font-size:22px;">{{clubdetail.title}}</span><br /><span class="small-text">{{clubdetail.venue}}</span></h2>
+    </div>
+    <div class="card">
+      Events
+    </div>
+    <div class="list">
+
+      <a class="item" href="#" style="font-size: 12px;">
+        Food Bonaza<br /><small>on 21/01/2018</small>
+      </a>
+      <a class="item" href="#" style="font-size: 12px;">
+        Wine Tasting
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

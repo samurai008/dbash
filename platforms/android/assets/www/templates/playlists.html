@@ -1,0 +1,14 @@
+<ion-view view-title="Home">
+  <ion-content class="align-with-tabs">
+    <div class="card" ng-hide="$userData.key">
+      <div class="item item-text-wrap">
+        Welcome <strong>Stranger</strong>
+      </div>
+    </div>
+    <div class="card" ng-show="$userData.key">
+      <div class="item item-text-wrap">
+        Welcome <strong>{{$userData.username}}</strong>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

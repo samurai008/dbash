@@ -1,0 +1,13 @@
+<ion-view view-title="Clubs near you">
+  <ion-content>
+    <div class="list">
+
+        <a class="item item-avatar" href="#" ng-repeat="club in clubs">
+          <img src={{club.icon}}>
+          <h2>{{club.name}}</h2>
+          <p>{{club.vicinity}}</p>
+        </a>
+
+    </div>
+  </ion-content>
+</ion-view>

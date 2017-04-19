@@ -1,0 +1,178 @@
+/* Empty. Add your own CSS if you like */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body * {
+  font-family: 'Montserrat', serif !important;
+}
+
+.item, button {
+  font-size: 12px !important;
+  font-family: 'Montserrat', serif !important;
+}
+
+button {
+  border-radius: 0 !important;
+}
+
+p {font-size: 12px !important;}
+h2 {font-size: 13px !important;}
+
+a, button {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.small-title {
+  font-size: 16px;
+  text-decoration: none;
+  color: grey;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  overflow:hidden;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile-picture img {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+}
+
+#profile-picture-container {
+  position: relative;
+}
+
+#edit-btn {
+  display: block;
+  position: absolute;
+  padding: 5px;
+  width: 75px;
+  height: 75px;
+  background: lightgrey;
+}
+
+/* font sizes */
+.title {
+  font-size: 14px !important;
+  font-family: 'Montserrat', serif !important;
+}
+
+table {
+  width: 100%;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+td:nth-child(2) {
+  padding: 1rem;
+  text-align: left;
+}
+
+td:nth-child(1) {
+  padding: 1rem;
+  text-align: right;
+}
+
+.full-width-img {
+  width: 100%;
+}
+
+.small-text {
+  font-size: 12px !important;
+}
+
+.item-divider {
+  background-color: lightcoral;
+  color: #fff;
+}
+
+.description-card {
+  border: 1px solid #ef473a;
+  padding: 1rem !important;
+  color: #999;
+  margin: 1em auto !important;
+  width: 100%;
+}
+
+.has-header{
+  margin-top: 48px;
+}
+
+.side-menu-margin {
+  margin-top: 0 !important;
+}
+
+.button-bar * {
+  border-radius: 0 !important;
+  width: 100%;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.cart-table{
+  width: 100%;
+}
+
+.cart-table td {
+  text-align: left;
+  width: 60%;
+  text-transform: uppercase;
+}
+
+.cart-table td:nth-child(2) {
+  text-align: right;
+  width: 30%;
+}
+
+.cart-table td:nth-child(3) {
+  text-align: center;
+}
+
+.cart-table tbody tr{
+  border-top: 1px solid grey;
+}
+
+.cart-table tfoot tr{
+  border-top: 1px solid lightgrey;
+}
+
+.cart-table tfoot tr:nth-child(1) td{
+  background: lightgrey;
+}
+
+.full-width-btn{
+  width:100%;
+  border-radius: 0;
+}
+
+.orders .list {
+  width: 100% !important;
+}
+
+.profile-row{
+  margin: 2rem 0 !important;
+}
+
+.box {
+  width: 100%;
+}
+
+ion-slides#carousel{
+  height:360px !important;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  margin: 0 !important;
+  border-radius: 0;
+}
