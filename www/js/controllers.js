@@ -527,6 +527,10 @@ angular.module('starter.controllers', ['ngCordova', 'ngStorage', 'base64'])
   console.log("obj");
 })
 
+.controller('FlatDetail', function($scope, $state, $stateParams){
+  console.log("objDetail");
+})
+
 .directive("fileread", [function () {
     return {
         scope: {

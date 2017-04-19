@@ -195,6 +195,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'tabSlideBox', 'socia
         controller: 'FlatCtrl'
       }
     }
+  })
+
+  .state('app.flatdetail', {
+    url: '/flatdetail/:id',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/flat_detail.html',
+        controller: 'FlatDetail'
+      }
+    }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');
