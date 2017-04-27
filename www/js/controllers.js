@@ -531,6 +531,14 @@ angular.module('starter.controllers', ['ngCordova', 'ngStorage', 'base64'])
   console.log("objDetail");
 })
 
+.controller('FoodList', function($scope, $state) {
+  console.log("asd");
+})
+
+.controller('FoodDetail', function($scope, $state, $stateParams) {
+  console.log("asd");
+})
+
 .directive("fileread", [function () {
     return {
         scope: {

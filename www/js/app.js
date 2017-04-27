@@ -205,6 +205,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'tabSlideBox', 'socia
         controller: 'FlatDetail'
       }
     }
+  })
+
+  .state('app.foodlist', {
+    url: '/foodlist',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/foodlist.html',
+        controller: 'FoodList'
+      }
+    }
+  })
+
+  .state('app.fooddetail', {
+    url: '/fooddetail/:id',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/fooddetail.html',
+        controller: 'FoodDetail'
+      }
+    }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');
